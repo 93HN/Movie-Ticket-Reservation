@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/api/movie")
-public class MoviceController {
+public class MovieController {
 
     @Autowired
     private MovieService movieService;
