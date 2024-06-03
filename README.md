@@ -7,7 +7,7 @@ This is a Java application for booking movie tickets built with Spring Boot and 
 <img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/31896d20-16d9-4fe1-a534-0490841de4b9" alt="image" height="100">
 <img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/c09bc4ac-c0ca-4f7c-9c6e-8eb9818eb35b" alt="image" height="100">
 <img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/78c75fff-e8a8-49c6-9897-34b08b2c9308" alt="image" height="100">
-<img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/3647613e-1d6e-4bc4-98b6-2da5648659f9" alt="image" height="100">
+<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/postgresql_vertical_logo_icon_168900.png" alt="image" height="100">
 <img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/8a5c0b00-776b-444e-bc24-36fc6bfe4c41" alt="image" height="50">
 <img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/b56a7167-6a3a-49a0-8b8a-8a4e3e71a383" alt="image" height="70">
 <img src="https://github.com/abhi9720/BankingPortal-API/assets/68281476/b5c86e65-cbe8-400a-afeb-895846601da7" alt="image"  height="100">
@@ -21,6 +21,18 @@ This is a Java application for booking movie tickets built with Spring Boot and 
 - Maven for project management
 - Postman for API testing
 -->
+
+## Database diagram, Entities and Relationships
+<img width="1178" alt="Captura de Tela 2024-06-03 às 19 16 05" src="https://github.com/93HN/Movie-Ticket-Reservation/assets/8496232/0f3539eb-2821-40ad-9901-5880ebeeda6e">
+
+**Accounts**: This entity represents the user accounts registered in the system. It contains information about each user, such as their ID, name, email, password, and the date when the account was created. Users can create accounts, log in, and manage their personal information through this entity.
+
+**Movies**: Represented as a table in the database, containing information about each movie such as its title, synopsis, and ID. Each movie can be associated with one or more screening rooms where it will be shown.
+
+**Screening Rooms**: Another table in the database, storing details about the screening rooms available in your cinema, including the room's ID, name, and capacity. Each screening room can host multiple screenings of different movies.
+
+**Tickets**: This entity represents the tickets purchased by users for specific movie screenings. It includes information like the ticket ID, the ID of the associated movie, the screening room ID, and the date/time when the ticket was booked.
+
 
 ## Features
 
