@@ -1,5 +1,5 @@
 package com.horaceneto.Movie_Ticket.movie;
-
+import com.horaceneto.Movie_Ticket.cinema.Screen;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,9 +17,12 @@ public class Movie {
     private Long id;
 
     @Column(unique = true)
-    private String Title;
+    private String title;
 
     private String sinopse;
-    private String cinema;
+
+   /* @OneToOne
+    @JoinColumn(name = "screen_id", referencedColumnName = "id")*/
+    private int screen;
 
 }
