@@ -3,6 +3,6 @@ import org.springframework.stereotype.Service;
 
 public interface MovieService {
 
-    public Movie addMovie(Movie movie);
+    public Movie createMovie(Movie movie);
 
     }
